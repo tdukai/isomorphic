@@ -1,0 +1,196 @@
+<div class="wrapper alt-bg">
+    <div class="content-area container">
+        <p class="headerline">Login</p>
+        <div class="submit_authenticate row">
+            <div class="content-panel cp-alt-padding">
+                <p class="toppy col-xs-7 col-xxs-12 padding-right-0 margin-bottom-30">Don't have an account? 
+                    <a data-omtag="cp:sso:login:signup" href="https://qa.accounts.move.com/signup?next=%2Fauthenticate%3Fapi_key%3D6f7ae437-e4e1-448d-9268-76a020ed727a%26app_id%3Dcontrol_panel&amp;api_key=6f7ae437-e4e1-448d-9268-76a020ed727a&amp;app_id=control_panel&amp;style=sign_up_new">Sign Up</a>
+                </p>
+                <div class="panel-body row col-xs-6 col-xxs-12">
+                    <p id="forgot_password_success" class="notice" style="display: none">Your password has been successfully updated.<br>   Please log in with your new password.
+                    </p>
+                    <form id="submit_authenticate" class="form-authenticate" method="post" autocomplete="off">
+                        <fieldset class="margin-bottom-30">
+                            <div class="padding-left-0 margin-bottom-30">
+                                <input id="token" name="token" value="0e458875-813f-4f08-9613-2eefc43f15ef" type="hidden"> 
+                                <input id="api_key" name="api_key" value="6f7ae437-e4e1-448d-9268-76a020ed727a" type="hidden"> 
+                                <div class="form-group label-field">
+                                    <input class="form-control" id="email" name="email" value="" type="text" placeholder="Your Email" autocapitalize="none" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+                                    <label for="email" class="ie-label" style="display: none;">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="padding-left-0">
+                                <div class="form-group label-field">
+                                    <input class="form-control" id="password" name="password" type="password" placeholder="Password" style="cursor: pointer; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;);">
+                                    <label for="password" class="ie-label" style="display: none;">Password</label>
+                                </div>
+                                <div class="checkbox">
+                                    <small><a class="bold-text" href="javascript:void(0);" data-omtag="cp:sso:login:forgotPassword" onclick="passwordReset(1)">Forgot Your Password?</a></small>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="margin-bottom-30">
+                            <input class="btn btn-primary btn-lg" id="move-login" name="move-login" type="submit" value="Log In">
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="remember_me" name="remember_me" value="" checked="checked"> Remember Me
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottomline">Need help or have a question? Visit our 
+                <a href="http://support.realtor.com/control-panel/getting-started/menu-id-161?utm_source=login&amp;utm_medium=productlink&amp;utm_campaign=control-panel" target="_blank" data-omtag="cp:sso:login:helpCenter">Help Center</a> for more information
+            </div>
+        </div>
+        <div class="row submit_email forgot_password" style="display: none">
+            <div class="content-panel col-xs-12 panel-alt-padding">
+                <div class="bottom-line margin-bottom-30 alt-border col-xs-10 clear-padding">
+                    <span class="fa fa-arrow-left"></span>
+                    <a class="field-link alt-padding" href="javascript:void(0);" onclick="cancelReset()">Back</a>
+                </div>
+                <div class="margin-bottom-30">&nbsp;</div>
+                <div class="panel-body panel-content margin-bottom-30">
+                    <div class="form-group has-error" style="display: none">
+                        <div class="has-error-msg">
+                            <span id="submit_email_error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group margin-bottom-30 padding-bottom-15 col-xs-9 clear-padding label-field">
+                        <input id="forgot_email" class="form-control" placeholder="Enter your email address">
+                        <label for="forgot_email" class="ie-label">Enter your email address</label>
+                    </div>
+                    <div class="margin-bottom-30 clearfix">&nbsp;</div>
+                    <div class="margin-bottom-30 col-xs-10 clear-padding">
+                        <input id="submit_email" class="btn btn-primary btn-lg" type="submit" value="Next">
+                        <a class="field-link" href="javascript:void(0);" onclick="cancelReset()">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomline">
+                Need help or have a question? Visit our <a href="http://support.realtor.com/control-panel/getting-started/menu-id-161?utm_source=login&amp;utm_medium=productlink&amp;utm_campaign=control-panel" target="_blank" data-omtag="cp:sso:login:helpCenter">Help Center</a> for more information
+            </div>
+        </div>
+        <div class="row submit_code_request forgot_password" style="display: none">
+            <div class="content-panel col-xs-12 panel-alt-padding">
+                <div class="bottom-line alt-border col-xs-10 clear-padding margin-bottom-30">
+                    <span class="fa fa-arrow-left"></span> <a class="field-link alt-padding" href="javascript:void(0);" onclick="passwordReset(1)">Back</a>
+                </div>
+                <div class="panel-body panel-content">
+                    <div class="margin-bottom-30 padding-bottom-15 form-group col-container">
+                        <p class="color-999 reset-popover">
+                            <span id="forgot_phone">We were unable to find a phone number for this account.</span> 
+                            <a class="color-999" tabindex="0" data-trigger="focus" role="button" data-placement="bottom" data-toggle="popover" data-content="We want to keep your account secure, so we’ll send a verification code to the phone number you’ve specified. You will need to enter the verification code to change your password.  Contact <a href='http://support.realtor.com/component/option,com_sfg/Itemid,111/' target='_blank'>Customer Care</a> if this number is no longer correct." data-original-title="" title="">
+                            <i class="fa fa-lg fa-info-circle"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="form-group margin-bottom-30 padding-bottom-15 clearfix">
+                        <p>How would you like to receive the code?</p>
+                        <div class="form-group has-error" style="display: none">
+                            <div class="has-error-msg">
+                                <span id="submit_code_request_error"></span>
+                            </div>
+                        </div>
+                        <div class="col-xxs-12 col-xs-4 margin-left-move-10">
+                            <label class="radio-inline">
+                                <input id="forgot_phone_type" name="forgot_phone_type" type="radio" value="sms" checked="checked"> Text Message SMS
+                            </label>
+                        </div>
+                        <div class="col-xxs-12 col-xs-5 margin-left-move-10 padding-bottom-15">
+                            <label class="radio-inline">
+                                <input id="forgot_phone_type" name="forgot_phone_type" type="radio" value="call"> Automated Phone Call
+                            </label>
+                        </div>
+                    </div>
+                    <div class="margin-bottom-30 margin-top-30 clearfix">
+                        <input id="submit_code_request" class="btn btn-primary btn-lg" type="submit" value="Next"> 
+                        <a class="field-link" href="javascript:void(0);" onclick="cancelReset()">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomline">Need help or have a question? Visit our 
+                <a href="http://support.realtor.com/control-panel/getting-started/menu-id-161?utm_source=login&amp;utm_medium=productlink&amp;utm_campaign=control-panel" target="_blank" data-omtag="cp:sso:login:helpCenter">Help Center</a> for more information
+            </div>
+        </div>
+        <div class="row submit_code forgot_password" style="display: none">
+            <div class="content-panel col-xs-12 panel-alt-padding">
+                <div class="bottom-line alt-border col-xs-10 clear-padding">
+                    <span class="fa fa-arrow-left"></span>
+                    <a class="field-link alt-padding" href="javascript:void(0);" onclick="passwordReset(2)">Back</a>
+                </div>
+                <div class="panel-body panel-content">
+                    <div class="padding-bottom-15 padding-top-15 form-group col-container margin-bottom-30">
+                        <p>Please enter your verification code</p>
+                    </div>
+                    <div class="form-group has-error" style="display: none">
+                        <div class="has-error-msg">
+                            <span id="submit_code_error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group success" style="display: none">
+                        <div class="has-success-msg">
+                            <span id="success-msg"></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-md-5 padding-left-0">
+                        <div style="position:relative" class="form-group col-container">
+                            <div class="col-fluid label-field">
+                                <input id="forgot_code" class="form-control field-with-icon" placeholder="Verification Code" type="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                                <label for="forgot_code" class="ie-label">Verification Code</label>
+                            </div>
+                            <div class="info-link col-fixed verify-popover alt-padding-top">
+                                <a class="color-999" tabindex="0" data-trigger="focus" role="button" data-placement="bottom" data-toggle="popover" data-content="A verification code is needed to confirm that you own this account. A code has been sent to your phone number in the format you requested, either text message (SMS) or automated phone call. Please contact" <a href="http://support.realtor.com/component/option,com_sfg/Itemid,111/" target="_blank">Customer Care
+                                </a> if you are having difficulty in receiving your verification code." data-original-title="" title="">
+                                    <i class="fa fa-lg fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-bottom-30 clearfix"></div>
+                    <div class="margin-bottom-30 margin-top-50 clearfix">
+                        <input id="submit_code" class="btn btn-primary btn-lg" type="submit" value="Next"> 
+                        <a class="field-link" href="javascript:void(0);" onclick="cancelReset()">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomline">Did not get your verification code? 
+                <a class="field-link-inline" id="submit_code_resend" href="https://qa.accounts.move.com/authenticate?api_key=6f7ae437-e4e1-448d-9268-76a020ed727a&amp;app_id=control_panel#">Resend Code</a>.
+            </div>
+        </div>
+        <div class="row submit_password forgot_password" style="display: none">
+            <div class="content-panel col-xs-12 panel-alt-padding">
+                <div class="bottom-line alt-border col-xs-10 clear-padding">
+                    <span class="fa fa-arrow-left"></span> 
+                    <a class="field-link alt-padding" href="javascript:void(0);" onclick="passwordReset(3)">Back</a>
+                </div>
+                <div class="panel-body panel-content">
+                    <div class="margin-bottom-30 padding-bottom-15 form-group col-container">
+                        <p>Please enter a new password</p>
+                    </div>
+                    <div class="form-group has-error" style="display: none">
+                        <div class="has-error-msg">
+                            <span id="submit_password_error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-10 clear-padding label-field">
+                        <input class="form-control" id="forgot_password" type="password" placeholder="New Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                        <label for="forgot_password" class="ie-label">New Password</label>
+                    </div>
+                    <div class="form-group col-xs-10 clear-padding label-field">
+                        <input class="form-control" id="forgot_password_confirm" type="password" placeholder="Confirm New Password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIUlEQVQ4EX2TOYhTURSG87IMihDsjGghBhFBmHFDHLWwSqcikk4RRKJgk0KL7C8bMpWpZtIqNkEUl1ZCgs0wOo0SxiLMDApWlgOPrH7/5b2QkYwX7jvn/uc//zl3edZ4PPbNGvF4fC4ajR5VrNvt/mo0Gr1ZPOtfgWw2e9Lv9+chX7cs64CS4Oxg3o9GI7tUKv0Q5o1dAiTfCgQCLwnOkfQOu+oSLyJ2A783HA7vIPLGxX0TgVwud4HKn0nc7Pf7N6vV6oZHkkX8FPG3uMfgXC0Wi2vCg/poUKGGcagQI3k7k8mcp5slcGswGDwpl8tfwGJg3xB6Dvey8vz6oH4C3iXcFYjbwiDeo1KafafkC3NjK7iL5ESFGQEUF7Sg+ifZdDp9GnMF/KGmfBdT2HCwZ7TwtrBPC7rQaav6Iv48rqZwg+F+p8hOMBj0IbxfMdMBrW5pAVGV/ztINByENkU0t5BIJEKRSOQ3Aj+Z57iFs1R5NK3EQS6HQqF1zmQdzpFWq3W42WwOTAf1er1PF2USFlC+qxMvFAr3HcexWX+QX6lUvsKpkTyPSEXJkw6MQ4S38Ljdbi8rmM/nY+CvgNcQqdH6U/xrYK9t244jZv6ByUOSiDdIfgBZ12U6dHEHu9TpdIr8F0OP692CtzaW/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                        <label for="forgot_password_confirm" class="ie-label">Confirm New Password</label>
+                    </div>
+                    <div class="margin-bottom-30 clearfix"></div>
+                    <div class="margin-bottom-30 margin-top-30">
+                        <input id="submit_password" class="btn btn-primary btn-lg" type="submit" value="Next"> 
+                        <a class="field-link" href="javascript:void(0);" onclick="cancelReset()">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomline">Need help or have a question? Visit our 
+                <a href="http://support.realtor.com/control-panel/getting-started/menu-id-161?utm_source=login&amp;utm_medium=productlink&amp;utm_campaign=control-panel" target="_blank" data-omtag="cp:sso:login:helpCenter">Help Center</a> for more information
+            </div>
+        </div>
+    </div>
+</div>

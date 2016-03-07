@@ -1,0 +1,3 @@
+{#contacts}
+    {>"contacts-item.dust"/}
+{/contacts}

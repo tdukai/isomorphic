@@ -1,0 +1,14 @@
+{>"layout.dust"/}
+
+{<headers}
+    <title>Prestissimo - Dashboard</title>
+{/headers}
+
+{<body}
+{>"menu.dust"/}
+{>"ads.dust"/}
+{>"footer.dust"/}
+{/body}
+
+{<bottom}
+{/bottom}

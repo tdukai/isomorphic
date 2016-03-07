@@ -1,0 +1,47 @@
+<div class="inquiry-item container-fluid margin-bottom" data-contact-id="{id}">
+    <div class="row item-header detail-section">
+        <div class="col-xxs-2 div-name-symbol">
+            <div class="name-symbol contact-symbol">{initials}</div>
+        </div>
+        <div class="col-xxs-10">
+            <div class="pull-left inquiry-contact">
+                <p class="inquiry-name">
+                    {fullName}
+                    <span>
+                        <span class="inquiry-activity-count badge">{activites} activities</span>
+                    </span>
+                </p>
+
+                <p class="inquiry-phone">
+                </p>
+                <ul>
+                    {#emails}<li>{email}</li>{/emails}
+                    {#phones}<li>{phone}</li>{/phones}
+                </ul>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="row item-details">
+        <div class="col-sm-2 col-xxs-6">
+            <p class="inquiry-type">
+            </p>
+            <div class="item-type">
+                <span>{mode}</span>
+            </div>
+            <p></p>
+        </div>
+        <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+            <a class="inquiry-address" target="_blank" href="{url}">{address}</a>
+            <span></span>
+            <p class="inquiry-message">
+                <span>{message}</span>
+            </p>
+        </div>
+        <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+            <p class="inquiry-date">
+                <span>{displayDate}</span>
+            </p>
+        </div>
+    </div>
+</div>

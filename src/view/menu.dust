@@ -1,0 +1,323 @@
+<div class="universal-service">
+ 
+<div class="universal-svc-container">
+    <div class="ucs-main-wrapper"><span id="urlSignIn" style="display:none">https://myaccount-qa.realtor.com/reg#/signin?return_url=</span><span id="urlSignUp" style="display:none">https://myaccount-qa.realtor.com/reg#/reg?return_url=</span>
+        <div class="nav-main-centered clearfloat hftevt">
+                <div class="nav-float-left nav-logo-wrapper">
+                    <ul class="nav nav-relative">
+                        <li><a class="logo-main pull-a" href="http://qam.www.realtor.com/" title="realtor.com®" data-omtag="header-menu:network:realtor"></a></li>
+                        <li><i class="icon-ntwk-menu nav-float-right" id="ucsnetwork" href="">Network menu</i>
+                            <div id="ucsnetpanel" class="nav nav-hover-menu hide nav-network-menu ucspannel-nav-hide">
+                                <div class="nav-dropdown-section width-100">
+                                    <div class="section-column1 single-column padding-top-bottom">
+                                        <div class="clearfloat section-row">
+                                            <a href="http://www.realtor.com/international/en" data-omtag="header-menu:network:international"><i class="ucs-sprite logo-international nav-float-left">Realtor.com International</i></a>
+                                            <p class="network-site-tagline">Properties in over 36 countries <span class="display-block">in 11 languages</span></p>
+                                        </div>
+                                        <div class="nav-divider"></div>
+                                        <div class="clearfloat section-row">
+                                            <a href="http://commercialsearch.realtor.com/" data-omtag="header-menu:network:commerical"><i class="ucs-sprite logo-commercial nav-float-left">Realtor.com Commerical Real Estate Search</i></a>
+                                            <p class="network-site-tagline">Find office, industrial, retail and <span class="display-block">other commercial real estate</span></p>
+                                        </div>
+                                        <div class="nav-divider"></div>
+                                        <div class="clearfloat section-row">
+                                            <a href="http://moving.com/" data-omtag="header-menu:network:moving"><i class="ucs-sprite logo-moving nav-float-left">Moving.com</i></a>
+                                            <p class="network-site-tagline">Moving quotes, tips, supplies,<span class="display-block">and tools</span></p>
+                                        </div>
+                                        <div class="nav-divider"></div>
+                                        <div class="clearfloat section-row">
+                                            <a href="http://www.seniorhousingnet.com/" data-omtag="header-menu:network:senior"><i class="ucs-sprite logo-senior-housing nav-float-left">SeniorHousingNet.com</i></a>
+                                            <p class="network-site-tagline">Find assisted living, nursing homes,<span class="display-block">and senior communities</span></p>
+                                        </div>
+                                        <div class="nav-divider"></div>
+                                        <div class="clearfloat section-row">
+                                            <a href="https://www.doorsteps.com/" data-omtag="header-menu:network:doorsteps"><i class="ucs-sprite logo-doorsteps nav-float-left">Doorsteps.com</i></a>
+                                            <p class="network-site-tagline">Start your homebuying process <span class="display-block"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nleft" class="nav-float-left">
+                    <ul class="nav nav-menu-bar nav-main-navitems clearfloat">
+                        
+
+                                <li class="nav-dropdown-uparrow"><a href="http://www.realtor.com/?stype=1" data-omtag="header-menu:buy"> BUY</a>
+                                <div class="nav-hover-menu">
+	                            <div class="nav-dropdown-tagline">Updated every 15 minutes</div>
+                                        <div class="nav-dropdown-section width-100 clearfloat">
+		                                <div class="section-column1">
+			                            <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-homes-forsale"></i>Homes for Sale</h3>
+                                            <ul class="nav-links">
+                                                    <li><a href="http://www.realtor.com/realestateforsale" data-omtag="header-menu:buy:all-homes">All Homes</a></li>
+                                                    <li><a href="http://www.realtor.com/newhomes" data-omtag="header-menu:buy:new-homes">New Homes &amp; Communities</a></li>
+                                                    <li><a href="http://www.realtor.com/foreclosure" data-omtag="header-menu:buy:foreclosures">Foreclosures</a></li>
+                   
+                                            </ul>
+                                        </div>
+                                        <div class="section-column2">
+		                                <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-home-values"></i>Home Values</h3>
+		                                <ul class="nav-links">
+                                                <li><a href="http://www.realtor.com/soldhomes" data-omtag="header-menu:buy:recently-sold">Recently Sold</a></li>
+                                                <li><a href="http://www.realtor.com/homevalues" data-omtag="header-menu:buy:property-records">Property Records</a></li>
+                                                <li><a href="http://www.realtor.com/advice/buy" data-omtag="header-menu:buy:home-values:home-buying-tips">Home Buying Tips</a></li>
+                                                <li><a href="http://www.realtor.com/advice/sell/" data-omtag="header-menu:buy:home-values:home-selling-tips">Home Selling Tips</a></li>
+		                                </ul>
+		                                </div>
+	                                    </div>	
+                                    </div> 
+                                    </li> 
+                                <li class="nav-dropdown-uparrow"><a href="http://www.realtor.com/rentals" data-omtag="header-menu:rent"> RENT</a>
+                                <div class="nav-hover-menu">
+	                            <div class="nav-dropdown-tagline">Updated every 15 minutes</div>
+                                        <div class="nav-dropdown-section width-100 clearfloat">
+		                                <div class="section-column1">
+			                            <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-homes-forrent"></i>Apartments for Rent</h3>
+                                            <ul class="nav-links">
+                                                    <li><a href="http://www.realtor.com/rentals?styp=1" data-omtag="header-menu:rent:apartments">Apartments For Rent</a></li>
+                                                    <li><a href="http://www.realtor.com/rentals?styp=2" data-omtag="header-menu:rent:condo/townhouses">House/Condo Rentals</a></li>
+                                                    <li><a href="http://www.realtor.com/rentals?styp=3" data-omtag="header-menu:rent:all-rentals">All Rentals</a></li>
+                   
+                                            </ul>
+                                        </div>
+                                        <div class="section-column2">
+		                                <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-trending"></i>Trending</h3>
+		                                <ul class="nav-links">
+                                                <li><a href="http://www.realtor.com/advice/rent/" data-omtag="header-menu:rent:advice">Renting Advice</a></li>
+                                                <li><a href="http://www.realtor.com/tag/rentals/" data-omtag="header-menu:editorial:news">Latest Renting News</a></li>
+                                                <li><a href="http://www.realtor.com/tag/petspets/" data-omtag="header-menu:rent:advice">Renting With Pets</a></li>
+		                                </ul>
+		                                </div>
+	                                    </div>	
+                                    </div> 
+                                    </li> 
+                                <li class="nav-dropdown-uparrow"><a href="http://www.realtor.com/mortgage/" data-omtag="header-menu:finance"> MORTGAGE</a>
+                                <div class="nav-hover-menu">
+	                            <div class="nav-dropdown-tagline">Get the best mortgage for your home</div>
+                                        <div class="nav-dropdown-section width-100 clearfloat">
+		                                <div class="section-column1">
+			                            <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-finance"></i>Mortgages</h3>
+                                            <ul class="nav-links">
+                                                    <li><a href="http://www.realtor.com/mortgage/rates/" data-omtag="header-menu:finance:mortgage-rates">Mortgage Rates</a></li>
+                                                    <li><a href="http://www.realtor.com/mortgage/rates/#loan_purpose=refinance" data-omtag="header-menu:finance:mortgage-rates:refinance">Refinance Rates</a></li>
+                                                    <li><a href="http://www.realtor.com/advice/finance/" data-omtag="header-menu:finance:advice">Finance Advice</a></li>
+                                                    <li><a href="http://www.realtor.com/mortgage/va-home-loan-center/" data-omtag="header-menu:finance:mortgage-rates:veteransHub">For Veterans</a></li>
+                   
+                                            </ul>
+                                        </div>
+                                        <div class="section-column2">
+		                                <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-calc"></i>Calculators</h3>
+		                                <ul class="nav-links">
+                                                <li><a href="http://www.realtor.com/mortgage/tools/mortgage-calculator/" data-omtag="header-menu:finance:mortgage-calculator">Mortgage Calculator</a></li>
+                                                <li><a href="http://www.realtor.com/mortgage/tools/refinance-calculator/" data-omtag="header-menu:finance:calculators:refinance">Refinance Calculator</a></li>
+                                                <li><a href="http://www.realtor.com/mortgage/tools/affordability-calculator/" data-omtag="header-menu:finance-calculators-affordability">How much can I afford</a></li>
+                                                <li><a href="http://www.realtor.com/mortgage/tools/rent-or-buy-calculator/" data-omtag="header-menu:finance-calculators-rent-vs-buy">Rent or Buy?</a></li>
+		                                </ul>
+		                                </div>
+	                                    </div>	
+                                    </div> 
+                                    </li> 
+                                <li class="nav-dropdown-noarrow"> <a href="http://www.realtor.com/realestateagents/" data-omtag="header-menu:realtors"><span class="text-tagline-mini">Find</span> REALTORS<sup>®</sup></a></li>
+                                <li class="nav-dropdown-uparrow"><a href="http://www.realtor.com/local/" data-omtag="header-menu:learn"> LOCAL</a>
+                                <div class="nav-hover-menu">
+	                            <div class="nav-dropdown-tagline">Find great schools and neighborhoods </div>
+                                    <div class="nav-dropdown-section width-100 ">
+		                            <div class="section-column1 single-column">
+			                        <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-local"></i>Local Info</h3>
+                                        <ul class="nav-links">
+                                                <li><a href="http://www.realtor.com/local" data-omtag="header-menu:learn:overview">Local Information <span class="display-block">for Neighborhoods &amp; Cities</span></a></li>
+                                        </ul>
+                                    </div>
+                                    </div>	
+                                    </div> 
+                                    </li> 
+                                <li class="nav-dropdown-uparrow"><a href="http://www.realtor.com/news/" data-omtag="header-menu:editorial:news-advice"> NEWS &amp; ADVICE</a>
+                                <div class="nav-hover-menu">
+	                            <div class="nav-dropdown-tagline">What you need to know in real estate </div>
+                                        <div class="nav-dropdown-section width-100 clearfloat">
+		                                <div class="section-column1">
+			                            <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-news"></i><a data-omtag="header-menu:editorial:news" href="http://www.realtor.com/news/">Real Estate News</a></h3>
+                                            <ul class="nav-links">
+                                                    <li><a href="http://www.realtor.com/news/" data-omtag="header-menu:editorial:news-latestNews">The Latest News</a></li>
+                                                    <li><a href="http://www.realtor.com/news/trends/" data-omtag="header-menu:editorial:news-housingTrends">Housing Trends</a></li>
+                                                    <li><a href="http://www.realtor.com/news/celebrity-real-estate/" data-omtag="header-menu:editorial:news-celebrity">Celebrity Real Estate</a></li>
+                                                    <li><a href="http://www.realtor.com/news/unique-homes/" data-omtag="header-menu:editorial:news-uniqueHomes">Unique Homes</a></li>
+                                                    <li><a href="http://www.realtor.com/data-portal/realestatestatistics/" data-omtag="header-menu:editorial:news-dataCenter">Data Center</a></li>
+                   
+                                            </ul>
+                                        </div>
+                                        <div class="section-column2">
+		                                <h3 class="nav-dropdown-title"><i class="ucs-sprite icon-advice"></i><a data-omtag="header-menu:editorial:advice" href="http://www.realtor.com/advice/">Advice</a></h3>
+		                                <ul class="nav-links">
+                                                <li><a href="http://www.realtor.com/advice/buy/" data-omtag="header-menu:editorial:advice-Buy">Buy</a></li>
+                                                <li><a href="http://www.realtor.com/advice/sell/" data-omtag="header-menu:editorial:advice-Sell">Sell</a></li>
+                                                <li><a href="http://www.realtor.com/advice/rent/" data-omtag="header-menu:editorial:advice-Rent">Rent</a></li>
+                                                <li><a href="http://www.realtor.com/advice/finance/" data-omtag="header-menu:editorial:advice-Finance">Finance</a></li>
+                                                <li><a href="http://www.realtor.com/advice/move/" data-omtag="header-menu:editorial:advice-Move">Move</a></li>
+                                                <li><a href="http://www.realtor.com/advice/home-improvement/" data-omtag="header-menu:editorial:advice-homeImprov">Home Improvement</a></li>
+                                                <li><a href="http://www.realtor.com/advice/for-pros/" data-omtag="header-menu:editorial:advice-Pros">For Pros</a></li>
+                                                <li><a href="http://www.realtor.com/advice/guides/va-loan" data-omtag="header-menu:advice:guide:veterans">Veterans Home Buying Guide</a></li>
+		                                </ul>
+		                                </div>
+	                                    </div>	
+                                    </div> 
+                                    </li> 
+
+                    </ul>
+                </div>
+                <div id="nright" class="nav-float-right">
+                        <ul class="nav nav-menu-bar nav-profile-items clearfloat">
+
+                        
+
+
+                            <li class="item-marketing-mobile nav-dropdown-uparrow"><a href="http://www.realtor.com/mobile" class="text-transform-default" data-omtag="header-menu:mobile"><i class="ucs-sprite icon-mobile"></i></a>
+                                <div class="nav-hover-menu profile-item1">
+                                    <div class="nav-dropdown-section width-100">
+                                        <div class="section-column1 single-column padding-top-bottom">
+                                            <div class="clearfloat section-row">
+                                                <a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" title="Realtor.com Mobile Apps" data-omtag="header-menu:mobile:core"><i class="ucs-sprite icon-mobile-marketing nav-float-left">Mobile Apps</i></a>
+                                                <ul class="list-marketing-text">
+                                                    <li><a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" class="marketing-header-link" data-omtag="header-menu:mobile:core">Realtor.com<sup>®</sup>mobile apps</a></li>
+                                                    <li>Find homes for sale or rent on <span class="display-block">iPhone, iPad, and Android</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="nav-divider"></div>
+                                            <div class="clearfloat section-row">
+                                                <a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" title="Realtor.com Real Estate App"><i class="ucs-sprite icon-forsale-app nav-float-left">For Sale App</i></a>
+                                                <ul class="list-marketing-text">
+                                                    <li><a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" class="marketing-header-link" data-omtag="header-menu:mobile:real-estate">Realtor.com<sup>®</sup> Real Estate</a></li>
+                                                    <li>
+                                                        <a href="https://itunes.apple.com/us/app/realtor.com-real-estate-homes/id336698281?mt=8" data-omtag="header-menu:mobile:ios-core">iOS</a>
+                                                        <a href="http://c00.adobe.com/b2d5a4e1-adc8-4a1d-a2b3-d5c186e399ba/dsp_rdc_mobile_uni-header/g/com.move.realtor" data-omtag="header-menu:mobile:android-core">Android</a>
+                                                        <a href="http://apps.microsoft.com/windows/en-us/app/real-estate-search-by-realtor/ec047c00-1692-4e8f-8a62-1877d1716b24" data-omtag="header-menu:mobile:windows-core">Windows</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfloat section-row">
+                                                <a href="http://marketing.realtor.com/rental-app/?iid=rdc_hdrmenu_mobile" title="Realtor.com Rental App" data-omtag="header-menu:mobile:rentals"> <i class="ucs-sprite icon-rent-app nav-float-left">Rentals App</i></a>
+                                                <ul class="list-marketing-text">
+                                                    <li><a href="http://marketing.realtor.com/rental-app/?iid=rdc_hdrmenu_mobile" class="marketing-header-link" data-omtag="header-menu:mobile:rentals">Realtor.com<sup>®</sup> Rentals</a></li>
+                                                    <li><a href="https://itunes.apple.com/us/app/realtor.com-rentals-apartments/id639619979?ls=1&amp;mt=8" data-omtag="header-menu:mobile:rentals-ios">iOS</a>
+                                                        <a href="https://play.google.com/store/apps/details?id=com.move.rentals" data-omtag="header-menu:mobile:rentals-android">Android</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfloat section-row">
+                                                <a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" title="Realtor.com Mortgage Calculator" data-omtag="header-menu:mobile:mortgage"><i class="ucs-sprite icon-mortgage-app nav-float-left">Mortgage Calculator App</i></a>
+                                                <ul class="list-marketing-text">
+                                                    <li><a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" class="marketing-header-link" data-omtag="header-menu:mobile:mortgage">Realtor.com<sup>®</sup> Mortgage Calculator</a></li>
+                                                    <li><a href="https://itunes.apple.com/us/app/realtor.com-real-estate-homes/id875060754?mt=8" data-omtag="header-menu:mobile:ios-mortgage">iOS</a>
+                                                        <a href="https://play.google.com/store/apps/details?id=com.move.mortgage" data-omtag="header-menu:mobile:android-mortgage">Android</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="clearfloat section-row">
+                                                <a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" title="Doorsteps Swipe App" data-omtag="header-menu:mobile:doorsteps"><i class="ucs-sprite icon-doorsteps-app nav-float-left">Doorsteps Swipe App</i></a>
+                                                <ul class="list-marketing-text">
+                                                    <li><a href="http://www.realtor.com/mobile?iid=rdc_hdrmenu_mobile" class="marketing-header-link" data-omtag="header-menu:mobile:doorsteps">Doorsteps Swipe<sup>™</sup></a></li>
+                                                    <li><a href="https://itunes.apple.com/app/id839814107" data-omtag="header-menu:mobile:ios-swipe">iOS</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                             <li class="nav-profile-divider"></li>
+
+                            
+                            <li id="userNotLoggedIn" class="nav-dropdown-uparrow  nav-float-right"><a id="menuLogIn" href="https://myaccount-qa.realtor.com/reg#/signin?return_url=file%3A%2F%2F%2FC%3A%2FWork%2Fstorage%2FMOVE%2520Customer%2520Credential%2520Services.html" class="text-transform-default">Log In</a>
+                                <!-- Log In User view  -->
+                                <div class="nav-hover-menu profile-item2">
+                                    <div class="nav-dropdown-section width-100">
+                                        <div class="section-column1 single-column padding-top-bottom">
+                                        <div id="v7NotLoggedIn" class="fav-content-login hide">
+                                            <h4>Log in to save your favorite<span class="display-block">properties and searches.</span></h4>
+                                               <div class="fav-content-login-btn"> <a class="btn btn-large-text btn-login " id="newSignIn0" href="" evttag="ptnid:310;actt:CLICK;actg:SGNIN;lnkel:SgInBtn;" data-omtag="header-menu:account:login">Log In</a>
+
+                                               </div>
+                                            <h4>No account? <a id="newSignUp0" class="" href="" evttag="ptnid:312;actt:CLICK;actg:REG;lnkel:RegisterBtn;" data-omtag="header-menu:account:signup">Sign Up</a></h4>
+                                         </div>
+                                        <div id="v6NotLoggedIn">
+                                            <ul class="nav-links nav-profile-links">
+                                                <li><a id="SignIn0" class="" href="https://myaccount-qa.realtor.com/reg#/signin?return_url=file%3A%2F%2F%2FC%3A%2FWork%2Fstorage%2FMOVE%2520Customer%2520Credential%2520Services.html" evttag="ptnid:310;actt:CLICK;actg:SGNIN;lnkel:SgInBtn;" data-omtag="header-menu:account:login">Log In</a></li>
+                                                <li><a id="SignUp0" class="" href="https://myaccount-qa.realtor.com/reg#/reg?return_url=file%3A%2F%2F%2FC%3A%2FWork%2Fstorage%2FMOVE%2520Customer%2520Credential%2520Services.html" evttag="ptnid:312;actt:CLICK;actg:REG;lnkel:RegisterBtn;" data-omtag="header-menu:account:signup">Sign Up</a></li>
+                                            </ul>
+                                        </div>
+                                          
+                                                <div class="nav-divider nav-divider-slim nav-login-divider"></div>
+                                                <ul class="nav-links nav-profile-links">
+                                                    <li>For Professionals</li>
+                                                    <li><a href="http://marketing.realtor.com/#iid=RDC_Header_login_products-solutions" target="_blank" evttag="ptnid:416;actt:CLICK;actg:FORAGENTS;lnkel:ForRltor-ProductsAndSolutions;" data-omtag="header-menu:account:agent-products">Products</a><i class="ucs-sprite icon-external"></i></li>                                                    
+                                                    <li><a href="http://support.realtor.com/#iid=rdc_hdr_realtors_support" target="_blank" evttag="ptnid:417;actt:CLICK;actg:FORAGENTS;lnkel:RealtorSupportLnk;" data-omtag="header-menu:account:agent-help">Help</a><i class="ucs-sprite icon-external"></i></li>                                 
+                                                    <li><a href="http://qam2.solutioncenter.realtor.com/ControlPanel/Login.aspx#iid=rdc_hdr_realtors_agentloginn" target="_blank" evttag="ptnid:414;actt:CLICK;actg:SGNIN;lnkel:ForRltor-AgentSgInBtn;" data-omtag="header-menu:account:agent-login">Log In</a><i class="ucs-sprite icon-external"></i></li>                   
+                                                </ul>
+                                        </div>
+                                      </div>
+                                 </div>
+                            </li>
+                            <li id="userLoggedIn" class="nav-dropdown-mini hide nav-dropdown-uparrow  nav-float-right"><span id="urlSignOut" style="display:none">https://myaccount-qa.realtor.com/logout</span><a href="http://myaccount-qa.realtor.com/profile/#/profile" class="ellipsis text-transform-default username-ellipsis">Hi <span class="js-username"></span></a>
+                                <div class="nav-hover-menu profile-item2">
+                                    <div class="nav-dropdown-section width-100">
+                                        <div class="section-column1 single-column padding-top-bottom">
+                                            <div id="idSavedSearchesAndProp" class="hide">
+                                               <div class="listing-viewed-wrapper item-favorites" id="noProperties">
+                                                  <h4>
+                                                     <i style="font-weight:bold">My Properties(0)</i> 
+                                                   </h4>
+                                                    <h5>
+                                                      <span>Click the </span><i class="ucs-sprite icon-favorites"></i><span> or Save to add a property</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="listing-viewed-wrapper" id="containerSavedProp" style="display: none">
+                                                   <div class="clearfloat">
+                                                     <h4 class="fav-title">
+                                                       <i id="myPropCount">My Properties(0)</i> <i style="float: right" class="fav-title-action"><a id="ViewAll0" href="http://myaccount-qa.realtor.com/properties">View All</a></i>
+                                                      </h4>
+                                                      <span id="recentlyViewed" style="display: block"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="nav-divider dashed-styled" id="classDivider"></div>
+                                                <div class="listing-viewed-wrapper" id="noSearches">
+                                                    <h4>
+                                                        <i style="font-weight:bold">My Searches(0)</i>
+                                                    </h4>
+                                                    <h5>
+                                                        Click Follow Search to add a new Search
+                                                    </h5>
+                                                </div>
+                                                <div class="listing-viewed-wrapper" id="containerSavedSearches" style="display: none">
+                                                    <div class="clearfloat">
+                                                        <h4 class="fav-title">
+                                                        <i id="mySearchesCount">My Searches(0)</i> <i style="float: right" class="fav-title-action"><a id="ViewAll1" style="float:right" href="http://myaccount-qa.realtor.com/searches">View All</a></i>
+                                                        </h4>
+                                                        <span id="recentSearches" style="display: block"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ns-ns-nav-divider"></div>
+                                            <ul class="nav-links nav-profile-links">
+                                                <li><a id="Myaccount0" href="http://myaccount-qa.realtor.com/profile/#/profile" evttag="ptnid:412;lnkel:AccountLnk;actt:CLICK;actg:VwACCT;sctn:hdrtoolbar;" data-omtag="hdrmenu:myaccount">Profile Settings</a></li>
+                                                <li class="nobottom-padding"><a id="SignOut0" href="#" evttag="ptnid:413;actt:CLICK;actg:SGNOUT;lnkel:SGNOUTBtn;" data-omtag="hdrmenu:myaccount:sign out">Log Out</a></li>
+                                            </ul>
+                                                <div class="nav-divider nav-divider-slim nav-login-divider"></div>
+                                                <ul class="nav-links nav-profile-links">
+                                                    <li>For Professionals</li>
+                                                    <li><a href="http://marketing.realtor.com/#iid=RDC_Header_login_products-solutions" target="_blank" evttag="ptnid:416;actt:CLICK;actg:FORAGENTS;lnkel:ForRltor-ProductsAndSolutions;" data-omtag="header-menu:account:agent-products">Products</a><i class="ucs-sprite icon-external"></i></li>                                                    
+                                                    <li><a href="http://support.realtor.com/#iid=rdc_hdr_realtors_support" target="_blank" evttag="ptnid:417;actt:CLICK;actg:FORAGENTS;lnkel:RealtorSupportLnk;" data-omtag="header-menu:account:agent-help">Help</a><i class="ucs-sprite icon-external"></i></li>                                 
+                                                    <li><a href="http://qam2.solutioncenter.realtor.com/ControlPanel/Login.aspx#iid=rdc_hdr_realtors_agentloginn" target="_blank" evttag="ptnid:414;actt:CLICK;actg:SGNIN;lnkel:ForRltor-AgentSgInBtn;" data-omtag="header-menu:account:agent-login">Log In</a><i class="ucs-sprite icon-external"></i></li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+</div>
+</div>

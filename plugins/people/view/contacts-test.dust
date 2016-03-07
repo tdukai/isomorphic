@@ -1,0 +1,13 @@
+{>"layout.dust"/}
+{<header}
+<title>Contacts Tests</title>
+{/header}
+
+{<body}
+<br />
+<h1>CONTACTS TESTS</h1>
+<a href="/restricted/contacts/tests/contacts-test-item" target="_blank">List Item</a>
+{/body}
+
+{<bottom}
+{/bottom}

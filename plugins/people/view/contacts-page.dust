@@ -1,0 +1,200 @@
+{>"layout.dust"/}
+{<header}
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+{/header}
+{<body}
+    <div class="body__content">
+        <!-- uiView:  -->
+        <div ui-view="" autoscroll="true">
+            <div class="pages--fixed-one">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div widget-container="main" view="full">
+                                    <!-- ngRepeat: w in widgets[widgetContainer] track by $index -->
+                                    <div widget="menu-widget" view="full">
+
+                                    <div widget="inquiries-widget" view="full">
+                                        <div id="widget--inquiries-widget" class="widget widget--full widget--inquiries-widget">
+                                            <placeholder-widget>
+                                                <div w-inquiries-widget="">
+                                                    <div id="widget--menu-widget" class="widget widget--full widget--menu-widget">
+                                                        
+                                                    </div>
+
+                                                    <div class="container"  id='list-container' {?isDetail}style="display:none;"{/isDetail}>
+                                                        <div class="inquiries-container">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-body">
+                                                                    <div class="row margin-bottom" id="inquiries-top">
+                                                                        <div class="col-xxs-5">
+                                                                            <div class="pull-left">
+                                                                                <h1>Contacts</h1>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xxs-7">
+                                                                            <div class="pull-right export-button">
+                                                                                <button class="btn btn-default btn-primary-color ng-hide" ng-click="" ng-show="false" type="button" style="">
+                                                                                    <i class="fa fa-fw fa-sign-out fa-rotate-270"></i>
+                                                                                    <span>EXPORT</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="pull-right filter-options">
+                                                                                <div class="form-inline set-width text-right">
+                                                                                    <div class="form-group selector">
+                                                                                        <label for="inquired" class="hidden-xxs">Sort by </label>
+                                                                                        <button class="btn btn-default pull-right" type="button">
+                                                                                            <i class="fa ion-ios-plus-empty hidden-xxs" style="font-weight:100"></i>
+                                                                                            <i class="fa fa-plus symbol-size visible-xxs"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-default collapsed pull-left  visible-xxs-inline" data-toggle="collapse" data-target="#sortbar" aria-expanded="false" aria-controls="sortbar">
+                                                                                            <i class="fa fa-sort-amount-desc symbol-size"></i>
+                                                                                        </button>
+
+                                                                                        <select class="form-control hidden-xxs js-sort">
+                                                                                            <option value="newest">
+                                                                                                Newest
+                                                                                            </option>
+                                                                                            <option value="oldest">
+                                                                                                Oldest
+                                                                                            </option>
+                                                                                            <option value="asc">
+                                                                                                A-Z
+                                                                                            </option>
+                                                                                            <option value="desc">
+                                                                                                Z-A
+                                                                                            </option>
+                                                                                        </select>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-xxs-12 hidden-sm hidden-md hidden-lg">
+                                                                            <div id="sortbar" class="navbar-collapse collapse">
+                                                                                <div class="hidden-sm hidden-md hidden-lg">
+                                                                                    <ul class="topnav nav navbar-nav">
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="nav navbar-nav navbar-right">
+                                                                                    <li>
+                                                                                        <select class="form-control js-sort">
+                                                                                            <option value="newest">
+                                                                                                Newest
+                                                                                            </option>
+                                                                                            <option value="oldest">
+                                                                                                Oldest
+                                                                                            </option>
+                                                                                            <option value="asc">
+                                                                                                A-Z
+                                                                                            </option>
+                                                                                            <option value="desc">
+                                                                                                Z-A
+                                                                                            </option>
+                                                                                        </select>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <p class="navbar-text navbar-right"></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div id="contacts-items">
+                                                                        {>"contacts-list.dust"/}
+                                                                    </div>
+
+                                                                    <div style="float:right" class="page-navigation">
+                                                                        <span class="js-nav-next" {^paging.hasNext}style="display:none;"{/paging.hasNext}>Next <i class="fa fa-chevron-right"></i></span>
+                                                                        <span class="js-nav-prev" {^paging.hasPrev}style="display:none;"{/paging.hasPrev}><i class="fa fa-chevron-left"></i> Prev</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </placeholder-widget>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="push"></div>
+            </div>
+        </div>
+    </div>
+    <div id="detail-container" {^isDetail}style="display:none;"{/isDetail}>
+        {?isDetail}
+        {>"contacts-detail.dust"/}
+        {/isDetail}
+    </div>
+    <div class="body__footer">
+        <footer class="footer container">
+            <support>
+                <div class="support">
+                    <div class="card z-2dp" style="padding: 30px">
+                        <h1>Support</h1>
+                        <div class="row">
+                            <div class="col-md-4 support__heading">
+                                <div class="row">
+                                    <div class="col-xxs-2">
+                                        <span class="fa-stack fa-lg support__icon"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
+                                    </div>
+                                    <div class="col-xxs-10">
+                                        <p>Have questions? Send us an email - we are happy to help.</p><a data-omtag="footer:support:email" target="_blank" ng-href="http://support.realtor.com/component/option,com_sfg/Itemid,111/" href="http://support.realtor.com/component/option,com_sfg/Itemid,111/">Send an email</a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 support__heading">
+                                <div class="row">
+                                    <div class="col-xxs-2">
+                                        <span class="fa-stack fa-lg support__icon"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-phone fa-stack-1x fa-inverse"></i></span>
+                                    </div>
+                                    <div class="col-xxs-10">
+                                        <p>Give us a call - we're here to answer your questions.</p><a data-omtag="footer:support:call" ng-href="tel:1-800-878-4166" href="tel:1-800-878-4166">1-800-878-4166</a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 support__heading">
+                                <div class="row">
+                                    <div class="col-xxs-2">
+                                        <span class="fa-stack fa-lg support__icon"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i></span>
+                                    </div>
+                                    <div class="col-xxs-10">
+                                        <p>Share and discuss best practices with other real estate professionals.</p><a data-omtag="footer:support:join" target="_blank" ng-href="http://community.realtor.com/" href="http://community.realtor.com/">Join the Conversation</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </support>
+        </footer>
+
+    </div>
+    <div class="body__disclaimer">
+        <footer class="footer container">
+            <p id="footer-copyright">
+                ©1995-2015 <a href="http://www.realtor.org" target="_blank" data-omtag="footer:corp:nar">National Association of REALTORS<sup>®</sup></a> and <a href="http://www.move.com/" target="_blank">Move, Inc.</a> All rights reserved.
+                <br> realtor.com
+                <sup>®</sup> is the official site of the National Association of REALTORS<sup>®</sup> and is operated by Move, Inc., a subsidiary of News Corp.
+            </p>
+        </footer>
+
+    </div>
+    
+</div>
+
+{/body}
+
+{<bottom}
+<script type="text/javascript">
+    window.page = new move.ContactsPage();
+    $(document).ready(function () {
+        window.page.init({
+            paging: {paging|s|js},
+            view: '{view}'
+        });
+    });
+</script>
+{/bottom}

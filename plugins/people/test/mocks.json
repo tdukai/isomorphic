@@ -1,0 +1,56 @@
+{
+    "paging": {
+        "page": 1,
+        "size": 10,
+        "sort": "asc",
+        "count": 23
+    },
+    "contact": {
+        "id": "2d236489-c287-4447-ae9e-755dc9febb71",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "emails": [
+            {
+                "email": "jane.doe@here.com",
+                "verified": true
+            },
+            {
+                "email": "janed@home.com",
+                "verified": false
+            }
+        ],
+        "phones": [
+            {
+                "phone": "(555) 123-4567",
+                "verified": true
+            },
+            {
+                "phone": "(555) 987-6543",
+                "verified": false
+            }
+        ],
+        "activites": 3,
+        "date": "2015-12-15T16:48:53.000Z",
+        "address": "2343 E 17th St Unit 313, PR, 00685",
+        "mprId": "1018761864",
+        "listingId": "589564160",
+        "url": "http://qam.www.realtor.com/realestateandhomes-detail/M10187-61864",
+        "message": "I would like more information regarding the property at 2343 E 17th St Unit 313 that I found on realtor.com",
+        "mode": "INQUIRY"
+    },
+    "detail": {
+        "price": 350000,
+        "bed": 4,
+        "bath": 3,
+        "sqft": 2541,
+        "status": "Backup Offer",
+        "mlsId": "CV15210271",
+        "photo": "http://p.rdcpix.com/v02/l33ea7045-m0s.jpg",
+        "agentName": "DESIREE VAVAK",
+        "agentEmail": "desvavak@hotmail.com",
+        "agentPhone": null,
+        "brokerName": "North American Realty",
+        "brokerEmail": null,
+        "brokerPhone": "(909)843-6445"
+    }
+}

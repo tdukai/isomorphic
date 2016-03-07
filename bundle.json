@@ -1,0 +1,93 @@
+{
+    "versions": {
+        "vendor": "1.0.0"
+    },
+    "doc": {
+        "src": [
+            "lib/**/*.js"
+        ],
+        "dest": "doc/reference"
+    },
+    "sass": {
+        "client": [
+        ],
+        "vendor": [
+        ]
+    },
+    "css": {
+        "client": [
+            "src/css/fullcalendar.css",
+            "src/css/widgets.css",
+            "src/css/style.css",
+            "src/css/style-responsive.css"
+        ],
+        "vendor": [
+            "src/css/bootstrap.min.css",
+            "src/css/bootstrap-theme.css",
+            "src/css/elegant-icons-style.css",
+            "src/css/font-awesome.min.css",
+            "src/vendor/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css",
+            "src/vendor/assets/fullcalendar/fullcalendar/fullcalendar.css",
+            "src/vendor/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css",
+            "src/css/xcharts.min.css",
+            "src/css/jquery-ui-1.10.4.min.css",
+            "src/css/owl.carousel.css",
+            "src/css/jquery-jvectormap-1.2.2.css",
+        ]
+    },
+    "font": {
+        "copy": {
+            "src": [
+                "src/font/fontawesome-webfont.*"
+            ],
+            "dest": "public/font"
+        }
+    },
+    "js": {
+        "copy": {
+            "src": [
+                "node_modules/dustjs-helpers/dist/dust-helpers.min.js",
+                "node_modules/dustjs-linkedin/dist/dust-core.min.js"
+            ],
+            "dest": "src/vendor"
+        },
+        "lint": [
+            "*.js", 
+            "*.json", 
+            ".jshintrc", 
+            "!lib/views.min.js", 
+            "lib/*.js", 
+            "src/js/**/*.js",
+            "plugins/**/*.js"
+        ],
+        "client": [
+            "src/js/realUrl.js"
+        ],
+        "vendor": [
+            "src/vendor/jquery-2.1.4.min.js",
+            "src/vendor/bootstrap.min.js",
+            "src/vendor/bootstrap-select.min.js",
+            "src/vendor/dust-core.min.js",
+            "src/vendor/dust-helpers.min.js",
+            "src/vendor/real-bmx-1.0.0.min.js",
+            "src/vendor/image-rotator.min.js"
+        ]
+    },
+    "img": {
+        "client": [
+            "src/img/**/*.*"
+        ]
+    },
+    "view": {
+        "client": [
+            "src/view/menu.dust",
+            "src/view/footer.dust"
+        ],
+        "server": [
+            "src/view/*.dust"
+        ]
+    },
+    "test": [
+        "test/**/*.js"
+    ]
+}

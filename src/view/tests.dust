@@ -1,0 +1,17 @@
+{>"layout.dust"/}
+{<header}
+<title>Prestissimo - Tests</title>
+{/header}
+
+{<body}
+<h1>{name}</h1>
+<h3>{version}</h3>
+<br />
+<h4>Plugins:</h4>
+{#plugins}
+    <a href="/restricted/{.}/tests" target="_blank">{.}</a>
+{/plugins}
+{/body}
+
+{<bottom}
+{/bottom}

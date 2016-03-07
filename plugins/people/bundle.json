@@ -1,0 +1,19 @@
+{
+    "js": {
+        "client": [
+            "js/contactsItemModel.js",
+            "js/contactsPagingModel.js",
+            "js/contactsDetailModel.js",
+            "js/contactsClient.js",
+            "js/contactsPage.js"
+        ]
+    },
+    "view": {
+        "client": [
+            "view/contacts-item.dust",
+            "view/contacts-list.dust",
+            "view/contacts-menu.dust",
+            "view/contacts-detail.dust"
+        ]
+    }
+}

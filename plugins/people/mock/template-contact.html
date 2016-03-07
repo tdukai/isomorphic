@@ -1,0 +1,1067 @@
+<html class="ng-scope">
+
+<head>
+    <style type="text/css">
+        @charset "UTF-8";
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ^__ do not move that meta tag -->
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="http://www.realtor.com/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <body class="body body--AGENT" cz-shortcut-listen="true" data-open="false">
+
+        <div class="body__content">
+            <!-- uiView:  -->
+            <div ui-view="" autoscroll="true" class="ng-scope">
+                <div class="pages--fixed-one ng-scope" ng-show="loadedContainers === 1">
+                    <div class="wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div widget-container="main" view="full" loaded="loaded()" class="ng-isolate-scope">
+                                        <!-- ngRepeat: w in widgets[widgetContainer] track by $index -->
+                                        <div widget="menu-widget" view="full" loaded="load()" ng-repeat="w in widgets[widgetContainer] track by $index" class="ng-scope ng-isolate-scope">
+                                            <div id="widget--menu-widget" class="widget widget--full widget--menu-widget">
+                                                <placeholder-widget>
+                                                    <div w-menu-widget="" class="ng-scope">
+
+
+                                                        <div id="apHeader">
+                                                            <div class="logo">
+                                                                <a href="http://www.realtor.com/" target="_blank" title="Realtor.com® - Official Site of the National Association of REALTORS®">
+                                                                    <img src="http://dev.solutioncenter.realtor.com/reports/Content/portal/img/realtor-logo-v3.png" alt="Official Site of the National Association of REALTORS®">
+                                                                </a>
+                                                            </div>
+                                                            <div class="main_nav">
+                                                                <ul class="menu tabbify">
+                                                                    <li class=""><a href="http://dev.solutioncenter.realtor.com/ControlPanel/Dashboard.aspx" data-="">Dashboard</a></li>
+
+                                                                    <li class="">
+                                                                        <a href="http://dev.solutioncenter.realtor.com/ControlPanel/AccountInformation/AgentProductSetup.aspx">Product Setup</a>
+                                                                    </li>
+
+                                                                    <li class=""><a href="http://dev.solutioncenter.realtor.com/reports/ManageListings/">Manage Listings</a></li>
+                                                                    <li class="">
+
+                                                                        <a href="http://dev.solutioncenter.realtor.com/profile/">Profile Manager</a>
+                                                                    </li>
+                                                                    <li class=""><a href="/" class="icon-ascii arrowDown evtDropdown" onclick="return false">Solutions</a>
+                                                                        <ul class="menu sub">
+                                                                            <li><a href="#">Realtor.com<sup>®</sup></a>
+                                                                                <ul class="menu tier">
+                                                                                    <li>
+                                                                                        <h4 class="headline">Solutions You Own</h4>
+                                                                                        <ul class="items">
+                                                                                            <li><a href="http://dev.solutioncenter.realtor.com/reports/performance/CoBroke/" class="normal">Connection<sup>(SM)</sup> for Co-Brokerage</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <h4 class="headline">Available Solutions</h4>
+                                                                                        <ul class="items">
+                                                                                            <li><a href="http://marketing.realtor.com/engage/showcase-listing-enhancements.php" class="popup">Showcase</a></li>
+                                                                                            <li><a href="http://dev.solutioncenter.realtor.com/findvtprovider.aspx" class="popup">Virtual Tours</a></li>
+                                                                                            <li><a href="http://www.topproducer.com/products/websites.aspx" class="popup">Featured Website™</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <h4 class="headline">Free Tools</h4>
+                                                                                        <ul class="items">
+                                                                                            <li><a href="http://mail.realtor.com/email/scripts/loginuser.pl" class="popup">Total Mail</a></li>
+                                                                                            <li><a href="http://marketing.realtor.com/" class="popup">Free Productivity Tools</a></li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li><a href="#">Top Producer</a>
+                                                                                <ul class="menu tier">
+                                                                                    <li><a href="http://www.topmarketer.net/Login/Login.aspx" class="icon-pseudo icon-after externalSite popup">Market Snapshot</a></li>
+                                                                                    <li><a href="http://topproducer8i.com" class="icon-pseudo icon-after externalSite popup">Top Producer</a></li>
+                                                                                    <li><a href="http://dev.solutioncenter.realtor.com/ControlPanel/MarketingResources/TopProducerSignup.aspx?sect=8&amp;amp;opt=4" class="icon-pseudo icon-after externalSite popup">Top Producer Lead Activation</a></li>
+                                                                                    <li><a href="https://www.featuredwebsite.com/login.asp" class="icon-pseudo icon-after externalSite popup">Featured Website™</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class=""><a href="#" class="icon-ascii arrowDown evtDropdown" onclick="return false">Reports</a>
+                                                                        <ul class="menu sub">
+                                                                            <li><a href="http://dev.solutioncenter.realtor.com/reports/Performance/CoBroke/">Connection<sup>(SM)</sup> for Co-Brokerage</a></li>
+                                                                            <li><a href="http://dev.solutioncenter.realtor.com/reports/EmailReports/">Manage Emailed Reports</a></li>
+                                                                            <li><a href="http://dev.solutioncenter.realtor.com/reports/performance/MyListings">My Listings</a></li>
+                                                                            <li><a href="http://dev.solutioncenter.realtor.com/reports/listingreports/">Listing Reports</a></li>
+                                                                        </ul>
+                                                                    </li>
+
+                                                                    <li class="current">
+                                                                        <a href="#" class="icon-ascii arrowDown evtDropdown" onclick="return false">Inquiries</a>
+                                                                        <ul class="menu sub">
+                                                                            <li class="current"><a href="http://dev.solutioncenter.realtor.com/reports/Inquiries/list/">realtor.com® Inquiries</a></li>
+                                                                            <li><a href="https://controllo.tphub-dev.moveaws.com/#/page/contacts">Contacts</a></li>
+                                                                        </ul>
+
+                                                                    </li>
+
+                                                                    <li id="tabbify-li-alt" class="ninebox">
+                                                                        <a href="#" class="icon-ascii arrowDown evtDropdown" onclick="return false">
+                                                                            <div class="agent-box">
+                                                                                <img src="http://p.rdcpix.com/v02/a0e3c1c00-c0l.jpg">
+                                                                            </div>
+                                                                        </a>
+                                                                        <ul class="menu sub">
+                                                                            <li><a href="https://dev.identity.move.com/settings?app_id=control_panel&amp;return_uri=http%3a%2f%2f192.168.99.100%3a8003%2f%23%2fpage%2freports%2fprofile" data-omtag="header:9box:manageAcct" class="normal">Account Settings</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="navbar navbar-static">
+                                                                <ul class="nav nav-horizontal pull-right">
+                                                                    <li class="dropdown account">
+                                                                        <a href="#" class="ellipsis nav_RealtorName arrowDown" data-toggle="dropdown">Kim Jones</a>
+                                                                        <span class="icon-ascii arrowDown ellipsisArrow"></span>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><a href="http://dev.solutioncenter.realtor.com/ControlPanel/accountinformation/ManageAccountSummary.aspx" class="normal">Manage Account</a></li>
+                                                                            <li><a href="http://dev.solutioncenter.realtor.com/ControlPanel/AccountInformation/Team.aspx?sect=1&amp;amp;opt=14" class="normal">Create Team</a></li>
+                                                                            <li><a href="http://dev.solutioncenter.realtor.com/ControlPanel/AccountInformation/Team.aspx?sect=1&amp;amp;opt=15" class="normal">Manage Team</a></li>
+                                                                            <li><a class="logout" href="http://dev.solutioncenter.realtor.com/reports/Home/LogOut">Sign Out</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="freetools"><a href="http://marketing.realtor.com/" class="popup">Free Tools</a></li>
+                                                                    <li class="dropdown support">
+                                                                        <a href="#" class="icon-ascii arrowDown" data-toggle="dropdown">Support</a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><a class="icon-pseudo icon-after externalSite popup" href="http://support.realtor.com/cp/">Help</a></li>
+                                                                            <li><a class="icon-pseudo icon-after externalSite popup" href="http://www.realtor.com/realestateseries/">Webinars</a></li>
+                                                                            <li><a class="icon-pseudo icon-after externalSite popup" href="http://support.realtor.com/training/instructor-olt/all-online-classes/menu-id-47">Free Online Training</a></li>
+                                                                            <li><a class="icon-pseudo icon-after externalSite popup" href="http://www.realtor.com/realestateseries/schedule/">Events</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="feedback"><a href="javascript:(function(){var%20id='ZN_b3kL3gqdYMsP84Q',c='ZN_b3kL3gqdYMsP84Q_container';var%20o=document.getElementById(c);if(o){o.innerHTML='';var%20d=o;}else%20{var%20d=document.createElement('div');d.id=c;}var%20qualtric=document.createElement('script');qualtric.type='text/javascript';qualtric.src='http://siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_b3kL3gqdYMsP84Q&amp;Q_LOC='+encodeURIComponent(window.location.href)+'&amp;Q_SIPREVIEW=TRUE';if(document.body){document.body.appendChild(qualtric);document.body.appendChild(d);}})();" id="feedbackMenu">Feedback</a></li>
+
+                                                                    <li class="dropdown">
+                                                                        <a href="#" class="icon-ascii arrowDown" data-toggle="dropdown">Visit Sites</a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><a class="icon-pseudo icon-after externalSite popup" href="http://www.realtor.com">Realtor.com<sup>®</sup></a></li>
+                                                                            <li><a class="icon-pseudo icon-after externalSite popup" href="http://lockbox.realtor.com/">Lockbox.com</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div id="breadcrumbs">
+                                                            <ul class="menu crumbify">
+                                                                <li class="crumb-less">Viewing: </li>
+                                                                <li class="crumb-less">Home</li>
+                                                                <li></li>
+                                                                <li class="active"></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </placeholder-widget>
+                                                <div class="widget__state-container widget__state-container--loaded">
+                                                    <!-- ngIf: vm.cause -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: w in widgets[widgetContainer] track by $index -->
+                                        <div widget="inquiries-widget" view="full" loaded="load()" ng-repeat="w in widgets[widgetContainer] track by $index" class="ng-scope ng-isolate-scope">
+                                            <div id="widget--inquiries-widget" class="widget widget--full widget--inquiries-widget">
+                                                <placeholder-widget>
+                                                    <div w-inquiries-widget="" class="ng-scope">
+                                                        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+
+                                                        <div class="container">
+                                                            <div class="inquiries-container">
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-body">
+                                                                        <contacts-list>
+                                                                            <div class="row margin-bottom" id="inquiries-top">
+                                                                                <div class="col-xxs-5">
+                                                                                    <div class="pull-left">
+                                                                                        <h1>Contacts</h1>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xxs-7">
+                                                                                    <div class="pull-right export-button">
+                                                                                        <button class="btn btn-default btn-primary-color ng-hide" ng-click="" ng-show="false" type="button" style="">
+                                                                                            <i class="fa fa-fw fa-sign-out fa-rotate-270"></i>
+                                                                                            <span>EXPORT</span>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <div class="pull-right filter-options">
+                                                                                        <div class="form-inline set-width text-right">
+                                                                                            <div class="form-group selector">
+                                                                                                <label for="inquired" class="hidden-xxs">Sort by </label>
+                                                                                                <button class="btn btn-default pull-right" ng-click="open()" type="button">
+                                                                                                    <i class="fa ion-ios-plus-empty hidden-xxs" style="font-weight:100"></i>
+                                                                                                    <i class="fa fa-plus symbol-size visible-xxs"></i>
+                                                                                                </button>
+                                                                                                <button type="button" class="btn btn-default collapsed pull-left  visible-xxs-inline" data-toggle="collapse" data-target="#sortbar" aria-expanded="false" aria-controls="sortbar">
+                                                                                                    <i class="fa fa-sort-amount-desc symbol-size"></i>
+                                                                                                </button>
+
+                                                                                                <select class="form-control hidden-xxs ng-pristine ng-untouched ng-valid" id="inquired" ng-model="inquired">
+                                                                                                    <option value="1">
+                                                                                                        Newest
+                                                                                                    </option>
+                                                                                                    <option value="2">
+                                                                                                        Oldest
+                                                                                                    </option>
+                                                                                                    <option value="3">
+                                                                                                        A-Z
+                                                                                                    </option>
+                                                                                                    <option value="4">
+                                                                                                        Z-A
+                                                                                                    </option>
+                                                                                                </select>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xxs-12 hidden-sm hidden-md hidden-lg">
+                                                                                    <div id="sortbar" class="navbar-collapse collapse">
+                                                                                        <div class="hidden-sm hidden-md hidden-lg">
+                                                                                            <ul class="topnav nav navbar-nav">
+
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                        <ul class="nav navbar-nav navbar-right">
+                                                                                            <li>
+                                                                                                <select class="form-control ng-pristine ng-untouched ng-valid" id="inquired" ng-model="inquired">
+                                                                                                    <option value="1">
+                                                                                                        Newest
+                                                                                                    </option>
+                                                                                                    <option value="2">
+                                                                                                        Oldest
+                                                                                                    </option>
+                                                                                                    <option value="3">
+                                                                                                        A-Z
+                                                                                                    </option>
+                                                                                                    <option value="4">
+                                                                                                        Z-A
+                                                                                                    </option>
+                                                                                                </select>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                        <p class="navbar-text navbar-right"></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <!-- ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">12</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                1Silvia-Edit 2Wui-Edit
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">silvia.wu.1.edit@tpolab.fake.com </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">(604) 777-0001 </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p><div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                        <!-- ngSwitchWhen: inquiry --><span ng-switch-when="inquiry" class="ng-scope">INQUIRY</span><!-- end ngSwitchWhen: -->
+                                                                                        <!-- ngSwitchWhen: agent_action -->
+                                                                                    </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url --><span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span><!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body --><p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                <span class="ng-binding">I am interested in seen and potentially purchasing the property below. I would like to know more about the property.
+
+15410 SW 74th Circle Ct Apt 1304</span>
+                                                                                    </p><!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time --><p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                        <span class="ng-binding">10/14/2014</span>
+                                                                                    </p><!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">12</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                1Silvia-Edit 2Wui-Edit
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">silvia.wu.1.edit@tpolab.fake.com </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">(604) 777-0001 </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p><div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                        <!-- ngSwitchWhen: inquiry --><span ng-switch-when="inquiry" class="ng-scope">INQUIRY</span><!-- end ngSwitchWhen: -->
+                                                                                        <!-- ngSwitchWhen: agent_action -->
+                                                                                    </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url --><span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span><!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body --><p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                <span class="ng-binding">I am interested in seen and potentially purchasing the property below. I would like to know more about the property.
+
+15410 SW 74th Circle Ct Apt 1304</span>
+                                                                                    </p><!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time --><p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                        <span class="ng-binding">10/14/2014</span>
+                                                                                    </p><!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">12</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                1Silvia-Edit 2Wui-Edit
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">silvia.wu.1@tpolab.fake.com </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">(604) 444-0001 </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">Last Wednesday at 1:42 PM</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">12</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                1Silvia-Edit 2Wui-Edit
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">silvia.wu.1@tpolab.fake.com </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">(604) 444-0001 </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">Last Wednesday at 1:29 PM</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">12</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                1Silvia-Edit 2Wui-Edit
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">silvia.wu.1@tpolab.fake.com </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                                <li ng-repeat="info in inquiry.CInfo" class="ng-binding ng-scope">(604) 444-0001 </li>
+                                                                                                <!-- end ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">Last Wednesday at 1:16 PM</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">ZZ</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                Zaria Zamora
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">12/23/2015</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">11</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                1Aria 1Armstrong
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">12/23/2015</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">JG</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                Jennifer Go
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">12/23/2015</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">D</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                DDFF
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">12/23/2015</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+                                                                            <div ng-repeat="inquiry in data track by $index" ng-class="{'loading':loading || wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id),'display-none':inquiry.hide }" class="inquiry-item container-fluid margin-bottom ng-scope" ng-click="openDetails(inquiry.contact.contactId || inquiry.touchpoint.contact.id)" style="">
+                                                                                <div class="row item-header detail-section">
+                                                                                    <div class="col-xxs-2 div-name-symbol">
+                                                                                        <!-- ngIf: inquiry.short -->
+                                                                                        <div class="name-symbol contact-symbol ng-binding ng-scope" ng-if="inquiry.short">1</div>
+                                                                                        <!-- end ngIf: inquiry.short -->
+                                                                                        <!-- ngIf: isEmpty(inquiry.short) -->
+                                                                                    </div>
+                                                                                    <div class="col-xxs-10">
+                                                                                        <div class="pull-left inquiry-contact">
+                                                                                            <p class="inquiry-name ng-binding">
+                                                                                                1Company Test
+                                                                                                <span ng-switch="wasDeleted(inquiry.contact.contactId || inquiry.touchpoint.contact.id)">
+                                                                                                    <!-- ngSwitchWhen: true -->
+                                                                                                    <!-- ngSwitchDefault:  -->
+                                                                                                    <!-- ngIf: inquiry.count>1 -->
+                                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                                </span>
+                                                                                            </p>
+
+                                                                                            <p class="inquiry-phone">
+                                                                                            </p>
+                                                                                            <ul>
+                                                                                                <!-- ngRepeat: info in inquiry.CInfo -->
+                                                                                            </ul>
+                                                                                            <p></p>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- ngIf: inquiry.count -->
+                                                                                <div class="row item-details ng-scope" ng-if="inquiry.count">
+                                                                                    <div class="col-sm-2 col-xxs-6">
+                                                                                        <p class="inquiry-type">
+                                                                                        </p>
+                                                                                        <div ng-switch="inquiry.touchpoint.type.primary" class="item-type">
+                                                                                            <!-- ngSwitchWhen: inquiry -->
+                                                                                            <!-- ngSwitchWhen: agent_action -->
+                                                                                            <span ng-switch-when="agent_action" class="ng-scope">CONTACT</span>
+                                                                                            <!-- end ngSwitchWhen: -->
+                                                                                        </div>
+                                                                                        <p></p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-7 col-xxs-12 div-inquiry-detail">
+                                                                                        <!-- ngIf: inquiry.web_url -->
+                                                                                        <!-- ngIf: !inquiry.web_url -->
+                                                                                        <span ng-if="!inquiry.web_url" class="ng-binding ng-scope"></span>
+                                                                                        <!-- end ngIf: !inquiry.web_url -->
+                                                                                        <!-- ngIf: inquiry.touchpoint.message.body -->
+                                                                                        <p class="inquiry-message ng-scope" ng-if="inquiry.touchpoint.message.body">
+                                                                                            <span class="ng-binding">Contact was created.</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.message.body -->
+                                                                                    </div>
+                                                                                    <div class="col-sm-3 col-xxs-6 pull-right div-inquiry-date">
+                                                                                        <!-- ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                        <p class="inquiry-date ng-scope" ng-if="inquiry.touchpoint.source_date_time">
+                                                                                            <span class="ng-binding">12/23/2015</span>
+                                                                                        </p>
+                                                                                        <!-- end ngIf: inquiry.touchpoint.source_date_time -->
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- end ngIf: inquiry.count -->
+
+
+                                                                            </div>
+                                                                            <!-- end ngRepeat: inquiry in data track by $index -->
+
+                                                                            <div>
+                                                                                <!-- ngIf: count==0 -->
+                                                                            </div>
+
+                                                                            <div style="float:right" class="page-navigation">
+                                                                                <!-- ngIf: skip -->
+                                                                                <!-- ngIf: count==11 -->
+                                                                                <span ng-if="count==11" ng-click="Next()" class="ng-scope">Next <i class="fa fa-chevron-right"></i></span>
+                                                                                <!-- end ngIf: count==11 -->
+                                                                            </div>
+                                                                        </contacts-list>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </placeholder-widget>
+                                                <div class="widget__state-container widget__state-container--loaded">
+                                                    <!-- ngIf: vm.cause -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end ngRepeat: w in widgets[widgetContainer] track by $index -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="push"></div>
+                </div>
+            </div>
+        </div>
+        <div class="body__footer">
+            <footer class="footer container">
+                <support>
+                    <div class="support">
+                        <div class="card z-2dp" style="padding: 30px">
+                            <h1>Support</h1>
+                            <div class="row">
+                                <div class="col-md-4 support__heading">
+                                    <div class="row">
+                                        <div class="col-xxs-2">
+                                            <span class="fa-stack fa-lg support__icon"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
+                                        </div>
+                                        <div class="col-xxs-10">
+                                            <p>Have questions? Send us an email - we are happy to help.</p><a data-omtag="footer:support:email" target="_blank" ng-href="http://support.realtor.com/component/option,com_sfg/Itemid,111/" href="http://support.realtor.com/component/option,com_sfg/Itemid,111/">Send an email</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 support__heading">
+                                    <div class="row">
+                                        <div class="col-xxs-2">
+                                            <span class="fa-stack fa-lg support__icon"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-phone fa-stack-1x fa-inverse"></i></span>
+                                        </div>
+                                        <div class="col-xxs-10">
+                                            <p>Give us a call - we're here to answer your questions.</p><a data-omtag="footer:support:call" ng-href="tel:1-800-878-4166" href="tel:1-800-878-4166">1-800-878-4166</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 support__heading">
+                                    <div class="row">
+                                        <div class="col-xxs-2">
+                                            <span class="fa-stack fa-lg support__icon"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i></span>
+                                        </div>
+                                        <div class="col-xxs-10">
+                                            <p>Share and discuss best practices with other real estate professionals.</p><a data-omtag="footer:support:join" target="_blank" ng-href="http://community.realtor.com/" href="http://community.realtor.com/">Join the Conversation</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </support>
+            </footer>
+
+        </div>
+        <div class="body__disclaimer">
+            <footer class="footer container">
+                <p id="footer-copyright">
+                    ©1995-2015 <a href="http://www.realtor.org" target="_blank" data-omtag="footer:corp:nar">National Association of REALTORS<sup>®</sup></a> and <a href="http://www.move.com/" target="_blank">Move, Inc.</a> All rights reserved.
+                    <br> realtor.com
+                    <sup>®</sup> is the official site of the National Association of REALTORS<sup>®</sup> and is operated by Move, Inc., a subsidiary of News Corp.
+                </p>
+            </footer>
+
+        </div>
+        <div id="rdc_modalContainer"></div>
+        <div class="init">
+            <div class="init__inner">
+                <div class="init__fail">
+                    <p>
+                        <strong>There was an issue with the application.</strong>
+                    </p>
+                    <p>Please try reloading the page.</p>
+
+                    <p>If the problem persists please <a href="http://support.realtor.com/component/option,com_sfg/Itemid,111/">contact customer support</a></p>
+                    <br>
+                </div>
+            </div>
+            <div class="init__loading" style="display: none;">
+                <i></i>
+            </div>
+        </div>
+        </div>
+        <link href="template-contact-css" rel="stylesheet">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+
+
+        <div class="kxhead" data-id="KGmxSS3O" style="display:none !important;">
+            <span class="kxtag kxinvisible" data-id="59191" data-alias="Optimizely - Tag "></span>
+        </div>
+    </body>
+
+</html>

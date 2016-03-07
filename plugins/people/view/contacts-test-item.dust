@@ -1,0 +1,55 @@
+{>"layout.dust"/}
+
+{<header}
+<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+<title>Contacts List Item Test</title>
+{/header}
+
+{<body}
+<div>
+    JSON: 
+    <textarea rows="50" cols="80" style="height:600px;width:800px;" id="json">
+    </textarea>
+    <br />
+    <input type="button" value="Render" id="render">
+    <br />
+    <hr>
+    <br />
+    <div class="body__content">
+        <div ui-view="" autoscroll="true">
+            <div class="pages--fixed-one">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div widget-container="main" view="full">
+                                    <!-- ngRepeat: w in widgets[widgetContainer] track by $index -->
+                                    <div widget="menu-widget" view="full">
+                                        <div widget="inquiries-widget" view="full">
+                                            <div id="widget--inquiries-widget" class="widget widget--full widget--inquiries-widget">
+                                                <div w-inquiries-widget="">
+                                                    <div id="widget--menu-widget" class="widget widget--full widget--menu-widget"></div>
+                                                    <div class="container">
+                                                        <div class="inquiries-container">
+                                                            <div id="test-container"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/body}
+
+{<bottom}
+<script src="/restricted/contacts/assets/js/contactsItemModel.js"></script>
+<script src="/restricted/contacts/assets/js/itemTest.js"></script>
+{/bottom}
