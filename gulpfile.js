@@ -12,6 +12,11 @@ function getViewName (file) {
     return file.basename;
 }
 
+// Check for if file is minified
+function notMinified (file) {
+    return (file.basename.indexOf('.min.') === -1);
+}
+
 // Find all plugins
 var srcPath = path.join(__dirname, 'plugins');
 var list = folders(srcPath);
@@ -61,6 +66,7 @@ gulp.task('copy', function () {
 gulp.task('bundle-css', function () {
     // Combine all css files
     gulp.src(bundle.css.vendor)
+        .pipe(plugins.if(notMinified, plugins.cssmin()))
         .pipe(plugins.concat('vendor-' + bundle.versions.vendor + '.min.css'))
         .pipe(gulp.dest('public/css'))
         .pipe(plugins.gzip({
@@ -71,7 +77,7 @@ gulp.task('bundle-css', function () {
         }))
         .pipe(gulp.dest('public/css'));
     return gulp.src(bundle.css.client)
-        .pipe(plugins.cssmin())
+        .pipe(plugins.if(notMinified, plugins.cssmin()))
         .pipe(plugins.concat('client-' + pkg.version + '.min.css'))
         .pipe(gulp.dest('public/css'))
         .pipe(plugins.gzip({

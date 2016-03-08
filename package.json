@@ -43,6 +43,7 @@
     "gulp-eslint": "1.1.1",
     "gulp-expect-file": "0.0.7",
     "gulp-gzip": "^1.2.0",
+    "gulp-if": "^2.0.0",
     "gulp-jshint": "^2.0.0",
     "gulp-lab": "1.0.5",
     "gulp-load-plugins": "^1.1.0",
