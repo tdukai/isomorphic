@@ -1,5 +1,4 @@
-# Prestissimo 
-*Playing as fast as one can*
+# Isomorphic-Sample
 
 
 Advantages:
@@ -14,14 +13,10 @@ Advantages:
 - Module separation based on naming conventions and a single build process to combine all client and server side resources using [Gulp.js][4]
 
 ## Commands
-.sh = MAC
-.bat = PC
 
-* install.bat - install with C++ version specified
-* run (.bat/.sh) or `node index.js`
-* debug (.bat/.sh) or `node-debug index.js`
-* gulp - lint 
-* gulp - bundle
+* gulp lint
+* gulp test
+* gulp bundle
 * gulp (default is bundle)
 
 ## Links
