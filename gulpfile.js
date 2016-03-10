@@ -12,9 +12,17 @@ function getViewName (file) {
     return file.basename;
 }
 
-// Check for if file is minified
-function notMinified (file) {
-    return (file.basename.indexOf('.min.') === -1);
+// Copy source files first (if exists for the type)
+function copyFiles (type, done) {
+    if (bundle.hasOwnProperty(type) && bundle[type].copy && Array.isArray(bundle[type].copy.src) && typeof bundle[type].copy.dest === 'string') {
+        gulp.src(bundle[type].copy.src).pipe(gulp.dest(bundle[type].copy.dest)).once('end', function () {
+            if (done) {
+                done();
+            }
+        });
+    } else if (done) {
+        done();
+    }
 }
 
 // Find all plugins
@@ -49,44 +57,32 @@ list.forEach(function (folder) {
 });
 
 
-gulp.task('copy', function () {
-    // Check if there is a copy task in the root folder
-    if (bundle.copy && Array.isArray(bundle.copy.src) && typeof bundle.copy.dest === 'string') {
-        gulp.src(bundle.copy.src).pipe(gulp.dest(bundle.copy.dest));
-    }
-    // Check for all types
-    for (var type in bundle) {
-        if (bundle.hasOwnProperty(type) && bundle[type].copy && Array.isArray(bundle[type].copy.src) && typeof bundle[type].copy.dest === 'string') {
-            gulp.src(bundle[type].copy.src).pipe(gulp.dest(bundle[type].copy.dest));
-        }
-    }
-});
-
-
 gulp.task('bundle-css', function () {
-    // Combine all css files
-    gulp.src(bundle.css.vendor)
-        .pipe(plugins.if(notMinified, plugins.cssmin()))
-        .pipe(plugins.concat('vendor-' + bundle.versions.vendor + '.min.css'))
-        .pipe(gulp.dest('public/css'))
-        .pipe(plugins.gzip({
-            append: true,
-            gzipOptions: {
-                level: 9
-            }
-        }))
-        .pipe(gulp.dest('public/css'));
-    return gulp.src(bundle.css.client)
-        .pipe(plugins.if(notMinified, plugins.cssmin()))
-        .pipe(plugins.concat('client-' + pkg.version + '.min.css'))
-        .pipe(gulp.dest('public/css'))
-        .pipe(plugins.gzip({
-            append: true,
-            gzipOptions: {
-                level: 9
-            }
-        }))
-        .pipe(gulp.dest('public/css'));
+    // Copy source files first, if needed
+    copyFiles('css', function () {
+        // Combine all css files
+        gulp.src(bundle.css.vendor)
+            .pipe(plugins.concat('vendor-' + bundle.versions.vendor + '.min.css'))
+            .pipe(gulp.dest('public/css'))
+            .pipe(plugins.gzip({
+                append: true,
+                gzipOptions: {
+                    level: 9
+                }
+            }))
+            .pipe(gulp.dest('public/css'));
+        return gulp.src(bundle.css.client)
+            .pipe(plugins.cssmin())
+            .pipe(plugins.concat('client-' + pkg.version + '.min.css'))
+            .pipe(gulp.dest('public/css'))
+            .pipe(plugins.gzip({
+                append: true,
+                gzipOptions: {
+                    level: 9
+                }
+            }))
+            .pipe(gulp.dest('public/css'));
+    });
 });
 
 
@@ -99,68 +95,82 @@ gulp.task('lint', function () {
 
 
 gulp.task('bundle-js', function () {
-    // Combine all client code
-    gulp.src(bundle.js.client)
-        .pipe(plugins.concat('client-' + pkg.version + '.js'))
-        .pipe(gulp.dest('public/js'))
-        .pipe(plugins.uglify().on('error', plugins.util.log))
-        .pipe(plugins.concat('client-' + pkg.version + '.min.js'))
-        .pipe(gulp.dest('public/js'))
-        .pipe(plugins.gzip({
-            append: true,
-            gzipOptions: {
-                level: 9
-            }
-        }))
-        .pipe(gulp.dest('public/js'));
-    // Combine all library files
-    return gulp.src(bundle.js.vendor)
-        .pipe(plugins.concat('vendor-' + bundle.versions.vendor + '.min.js'))
-        .pipe(gulp.dest('public/js'))
-        .pipe(plugins.gzip({
-            append: true,
-            gzipOptions: {
-                level: 9
-            }
-        }))
-        .pipe(gulp.dest('public/js'));
+    // Copy source files first, if needed
+    copyFiles('js', function () {
+        // Combine all client code
+        gulp.src(bundle.js.client)
+            .pipe(plugins.concat('client-' + pkg.version + '.js'))
+            .pipe(gulp.dest('public/js'))
+            .pipe(plugins.uglify().on('error', plugins.util.log))
+            .pipe(plugins.concat('client-' + pkg.version + '.min.js'))
+            .pipe(gulp.dest('public/js'))
+            .pipe(plugins.gzip({
+                append: true,
+                gzipOptions: {
+                    level: 9
+                }
+            }))
+            .pipe(gulp.dest('public/js'));
+        // Combine all library files
+        return gulp.src(bundle.js.vendor)
+            .pipe(plugins.concat('vendor-' + bundle.versions.vendor + '.min.js'))
+            .pipe(gulp.dest('public/js'))
+            .pipe(plugins.gzip({
+                append: true,
+                gzipOptions: {
+                    level: 9
+                }
+            }))
+            .pipe(gulp.dest('public/js'));
+    });
 });
 
 
 gulp.task('bundle-img', function () {
-    return gulp.src(bundle.img.client)
-        .pipe(gulp.dest('public/img'));
+    // Copy source files first, if needed
+    copyFiles('img', function () {
+        return gulp.src(bundle.img.client).pipe(gulp.dest('public/img'));
+    });
+});
+
+
+gulp.task('bundle-font', function () {
+    // Copy source files first, if needed
+    copyFiles('font');
 });
 
 
 gulp.task('bundle-view', function () {
-    // Combine all views for server side
-    gulp.src(bundle.view.server)
-        .pipe(plugins.expectFile(bundle.view.server))
-        .pipe(plugins.replace('{vendorVersion}', bundle.versions.vendor)) // Replace tokens with real version numbers
-        .pipe(plugins.replace('{clientVersion}', pkg.version))
-        .pipe(plugins.dust({
-            name: getViewName,
-            preserveWhitespace: false
-        }))
-        .pipe(plugins.concat('views.min.js'))
-        .pipe(gulp.dest('lib'));
-    // Combine and compress client side views
-    return gulp.src(bundle.view.client)
-        .pipe(plugins.expectFile(bundle.view.client))
-        .pipe(plugins.dust({
-            name: getViewName,
-            preserveWhitespace: false
-        }))
-        .pipe(plugins.concat('views-' + pkg.version + '.min.js'))
-        .pipe(gulp.dest('public/js'))
-        .pipe(plugins.gzip({
-            append: true,
-            gzipOptions: {
-                level: 9
-            }
-        }))
-        .pipe(gulp.dest('public/js'));
+    // Copy source files first, if needed
+    copyFiles('view', function () {
+        // Combine all views for server side
+        gulp.src(bundle.view.server)
+            .pipe(plugins.expectFile(bundle.view.server))
+            .pipe(plugins.replace('{vendorVersion}', bundle.versions.vendor)) // Replace tokens with real version numbers
+            .pipe(plugins.replace('{clientVersion}', pkg.version))
+            .pipe(plugins.dust({
+                name: getViewName,
+                preserveWhitespace: false
+            }))
+            .pipe(plugins.concat('views.min.js'))
+            .pipe(gulp.dest('lib'));
+        // Combine and compress client side views
+        return gulp.src(bundle.view.client)
+            .pipe(plugins.expectFile(bundle.view.client))
+            .pipe(plugins.dust({
+                name: getViewName,
+                preserveWhitespace: false
+            }))
+            .pipe(plugins.concat('views-' + pkg.version + '.min.js'))
+            .pipe(gulp.dest('public/js'))
+            .pipe(plugins.gzip({
+                append: true,
+                gzipOptions: {
+                    level: 9
+                }
+            }))
+            .pipe(gulp.dest('public/js'));
+    });
 });
 
 
@@ -169,31 +179,31 @@ gulp.task('watch', ['bundle'], function () {
     plugins.developServer.listen({ path: 'index.js' });
 
     gulp.watch(bundle.js.lint, function () {
-        gulp.start(['copy', 'lint', 'test', 'bundle-js'], function () {
+        gulp.start(['lint', 'test', 'bundle-js'], function () {
             plugins.developServer.restart();
         });
     });
 
     gulp.watch(bundle.css.client, function () {
-        gulp.start(['copy', 'bundle-css'], function () {
+        gulp.start(['bundle-css'], function () {
             plugins.developServer.restart();
         });
     });
 
     gulp.watch(bundle.css.server, function () {
-        gulp.start(['copy', 'bundle-css'], function () {
+        gulp.start(['bundle-css'], function () {
             plugins.developServer.restart();
         });
     });
 
     gulp.watch(bundle.view.server, function () {
-        gulp.start(['copy', 'bundle-view'], function () {
+        gulp.start(['bundle-view'], function () {
             plugins.developServer.restart();
         });
     });
 
     return gulp.watch(bundle.view.client, function () {
-        gulp.start(['copy', 'bundle-view'], function () {
+        gulp.start(['bundle-view'], function () {
             plugins.developServer.restart();
         });
     });
@@ -208,22 +218,5 @@ gulp.task('test', function () {
 });
 
 
-/* NOT ACTIVATED YET
-gulp.task('doc', function() {
-    gulp.src(bundle.doc.src)
-        .pipe(plugins.markdown())
-        .pipe(gulp.dest(bundle.doc.dest));
-    return gulp.src(bundle.doc.src)
-        .pipe(plugins.plumber())
-        .pipe(plugins.yuidoc({
-            project: {
-                version: pkg.version
-            }
-        }))
-        .pipe(gulp.dest(bundle.doc.dest));
-});
-*/
-
-
-gulp.task('bundle', ['copy', 'lint', 'test', 'bundle-js', 'bundle-css', 'bundle-img', 'bundle-view']);
+gulp.task('bundle', ['lint', 'test', 'bundle-js', 'bundle-css', 'bundle-img', 'bundle-font', 'bundle-view']);
 gulp.task('default', ['bundle']);

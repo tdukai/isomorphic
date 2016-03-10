@@ -1,6 +1,6 @@
 {>"layout.dust"/}
 {<header}
-<title>Prestissimo - Tests</title>
+<title>Isomorphic - Tests</title>
 {/header}
 
 {<body}

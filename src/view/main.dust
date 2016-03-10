@@ -1,0 +1,20 @@
+{>"layout.dust"/}
+
+{<headers}
+{/headers}
+
+{<body}
+{>"navigation.dust"/}
+<div class="container-fluid" id="main">
+    <div class="row row-offcanvas row-offcanvas-left">
+        {>"menu.dust"/}
+        {?dashboard}
+        {>"dashboard.dust"/}
+        {/dashboard}
+    </div>
+</div>
+{>"footer.dust"/}
+{/body}
+
+{<bottom}
+{/bottom}
