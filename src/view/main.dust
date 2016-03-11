@@ -5,7 +5,7 @@
 
 {<body}
 {>"navigation.dust"/}
-<div class="container-fluid" id="main">
+<div class="container-fluid" id="main" style="overflow:hidden;">
     <div class="row row-offcanvas row-offcanvas-left">
         {>"menu.dust"/}
         {?dashboard}

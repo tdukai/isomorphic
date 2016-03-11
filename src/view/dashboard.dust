@@ -7,7 +7,7 @@
                         <i class="fa fa-user fa-5x"></i>
                     </div>
                     <h6 class="text-uppercase">Users</h6>
-                    <h1 class="display-1">134</h1>
+                    <h1 class="display-1">15,000</h1>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
                         <i class="fa fa-female fa-5x"></i>
                     </div>
                     <h6 class="text-uppercase">Females</h6>
-                    <h1 class="display-1">134</h1>
+                    <h1 class="display-1">7,600</h1>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
                         <i class="fa fa-male fa-5x"></i>
                     </div>
                     <h6 class="text-uppercase">Males</h6>
-                    <h1 class="display-1">134</h1>
+                    <h1 class="display-1">7,400</h1>
                 </div>
             </div>
         </div>
@@ -82,35 +82,27 @@
     </div>
     <div class="row">
         <hr>
-
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder text-center">
                 <img src="https://placehold.it/200/dddddd/fff?text=1" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-                <h4>Responsive</h4>
-                <span class="text-muted">Device agnostic</span>
+                <h4>Dual Rendering</h4>
+                <span class="text-muted">For higher performance views can be executed on both server and client side. For maximum performance initial rendering happens on the server and any additional DOM manipulation (partial rendering) occur on the client side. +95% code reuse</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder text-center">
                 <img src="https://placehold.it/200/e4e4e4/fff?text=2" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-                <h4>Frontend</h4>
-                <span class="text-muted">UI / UX oriented</span>
+                <h4>Models</h4>
+                <span class="text-muted">Standard vanilla js, containing the view related logic (transformation, rendering and configuration options) and 100% reused on both server and client side.</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder text-center">
                 <img src="https://placehold.it/200/d6d6d6/fff?text=3" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-                <h4>HTML5</h4>
-                <span class="text-muted">Standards-based</span>
+                <h4>Views</h4>
+                <span class="text-muted">View engine syntax is not intruding or distorting HTML domain. Minimal overlap provides more freedom to UX designers and developers both. Views are reused on both server and client side.</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder text-center">
                 <img src="https://placehold.it/200/e0e0e0/fff?text=4" class="center-block img-responsive img-circle" alt="Generic placeholder thumbnail">
-                <h4>Framework</h4>
-                <span class="text-muted">CSS and JavaScript</span>
+                <h4>Binding</h4>
+                <span class="text-muted">Non-intrusive micro framework with configuration over implementation. Non-opiniated observable model with multiple watch strategies. It works on both client and server side with no dependencies. Non-intrusive binding between model and HTML controls. It avoids most common design traps by NOT intruding into either the model or the HTML domain. Configuration over implementation, also providing intercept methods when reading or writing into model. Only dependency is the Model, pure vanilla js.</span>
             </div>
         </div>
-
     </div>
-
-
-
-
-
-
 </div>

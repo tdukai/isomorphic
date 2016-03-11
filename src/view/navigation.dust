@@ -2,17 +2,17 @@
     <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
         ☰
     </button>
-    <a class="navbar-brand" href="#">Isomporphic</a>
+    <a class="navbar-brand" href="#">Isomorphic Sample</a>
     <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
         <ul class="nav navbar-nav pull-right">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+                <a class="nav-link" href="">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="">Search</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#myAlert" data-toggle="collapse">Wow</a>
+                <a class="nav-link" href="">Map</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
