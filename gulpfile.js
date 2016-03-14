@@ -213,7 +213,7 @@ gulp.task('watch', ['bundle'], function () {
 gulp.task('test', function () {
     return gulp.src(bundle.test)
         //.pipe(plugins.lab('--reporter html --output temp/coverage.html'))
-        .pipe(plugins.lab('--reporter console'))
+        .pipe(plugins.lab('--reporter console --timeout 0'))
         .on('error', plugins.util.log);
 });
 

@@ -1,4 +1,4 @@
-# Isomorphic-Sample
+# Isomorphic
 
 
 Advantages:
@@ -20,7 +20,7 @@ Advantages:
 * gulp (default is bundle)
 
 ## Links
-- [http://hapijs.com][1] (MVC framework)
+- [http://hapijs.com][1] (MVC type framework)
 - [http://dustjs.com][2] (View engine)
 - [https://github.com/hapijs/joi][5] (Validation)
 - [http://gulpjs.com][4] (Application build process)
