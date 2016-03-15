@@ -60,7 +60,9 @@
             "plugins/**/*.js"
         ],
         "client": [
-            "src/js/tools-url.js"
+            "src/js/tools-url.js",
+            "src/js/tools-format.js",
+            "src/js/pageModel.js"
         ],
         "vendor": [
             "src/vendor/jquery-2.2.1.min.js",

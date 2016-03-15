@@ -5,12 +5,12 @@
 
 {<body}
 {>"navigation.dust"/}
-<div class="container-fluid" id="main" style="overflow:hidden;">
+<div class="container-fluid" id="pageContainer" style="overflow:hidden;">
     <div class="row row-offcanvas row-offcanvas-left">
         {>"menu.dust"/}
-        {?dashboard}
+        {?isDashboard}
         {>"dashboard.dust"/}
-        {/dashboard}
+        {/isDashboard}
     </div>
 </div>
 {>"footer.dust"/}
