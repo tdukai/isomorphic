@@ -21,9 +21,9 @@
                 </ul>
                 <br />
                 <form class="form-inline">
-                    <fieldset class="form-group" style="width:100%;">
+                    <div class="form-group">
                         <input type="text" class="form-control" id="searchText" placeholder="Search...">
-                    </fieldset>
+                    </div>
                     <button type="submit" class="btn btn-primary">Search</button>
                 </form>
             </div>
