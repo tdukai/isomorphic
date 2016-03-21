@@ -8,9 +8,15 @@
 <div class="container-fluid" id="pageContainer" style="overflow:hidden;">
     <div class="row row-offcanvas row-offcanvas-left">
         {>"menu.dust"/}
-        {?isDashboard}
-        {>"dashboard.dust"/}
-        {/isDashboard}
+        <div id="contentContainer">
+            {?dashboard}
+                <h1>DASHBOARD HERE: {isDashboard}{mode}</h1>
+                {>"dashboard.dust"/}
+            {/dashboard}
+            {?search}
+                {>"search.dust"/}
+            {/search}
+        </div>
     </div>
 </div>
 {>"footer.dust"/}

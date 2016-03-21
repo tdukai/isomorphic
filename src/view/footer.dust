@@ -1,3 +1,5 @@
-<footer class="container-fluid">
-    <p class="text-right small">©2016 Tamara Dukai</p>
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">©2016 Tamara Dukai</span>
+    </div>
 </footer>

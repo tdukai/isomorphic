@@ -22,8 +22,13 @@ PageModel.prototype = Object.create(Model.prototype);
 PageModel.constructor = Model;
 
 /* Check mode */
+/*
 PageModel.prototype.isDashboard = function isDashboard () {
     return (this.mode === 'dashboard');
+};
+
+PageModel.prototype.isSearch = function isSearch () {
+    return (this.mode === 'search');
 };
 
 /* Format the count */

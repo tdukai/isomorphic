@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                SEARCH
+            </div>
+            <div class="card-block">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#searchName" role="tab" data-toggle="tab">By Name</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#searchCountry" role="tab" data-toggle="tab">By Country</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#searchRegion" role="tab" data-toggle="tab">By Region</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#searchCity" role="tab" data-toggle="tab">By City</a>
+                    </li>
+                </ul>
+                <br />
+                <form class="form-inline">
+                    <fieldset class="form-group" style="width:100%;">
+                        <input type="text" class="form-control" id="searchText" placeholder="Search...">
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
